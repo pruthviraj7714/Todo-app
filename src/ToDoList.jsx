@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { SpeedInsights } from '@vercel/speed-insights/next';
 
 const ToDoList = () => {
     const [tasks, setTasks] = useState(["Eat Breakfast", "Take Shower"]);
@@ -81,6 +82,7 @@ const ToDoList = () => {
                 </li>
             })}
         </ol>
+        <SpeedInsights />
 
     </div>
 
